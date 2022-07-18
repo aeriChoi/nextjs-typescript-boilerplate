@@ -4,7 +4,7 @@
     "es6": true,
     "jest": true
   },
-  "extends": ["next/core-web-vitals", "prettier"],
+  "extends": ["next", "next/core-web-vitals", "prettier"],
   "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -20,10 +20,10 @@
     }
   },
   "rules": {
-    "no-var": "error", 
+    "no-var": "error",
     "prefer-const": "error",
-    "prefer-arrow-callback": "off", 
-    "@typescript-eslint/no-unused-vars": "error",
+    "prefer-arrow-callback": "off",
+    "@typescript-eslint/no-unused-vars": "warn",
     "@typescript-eslint/no-explicit-any": "error"
   }
 }
